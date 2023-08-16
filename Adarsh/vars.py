@@ -11,7 +11,7 @@ class Var(object):
     MULTI_CLIENT = False
     API_ID = int(getenv('API_ID', "28313782"))
     API_HASH = str(getenv('API_HASH', "52e8687988e1be742f5f73ea392e89bc"))
-    BOT_TOKEN = str(getenv('BOT_TOKEN', "5784407290:AAHflWCU1FpglhPeSIpeVX2evUbtFPut3vU"))
+    BOT_TOKEN = str(getenv('BOT_TOKEN', "6519574916:AAG3POKqQZaK9A__GaW-jOVdNfBylJ6X47E"))
     name = str(getenv('name', 'filetolinkbot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
@@ -25,12 +25,12 @@ class Var(object):
     OWNER_USERNAME = str(getenv('OWNER_USERNAME', "Dhanush1300"))
     if 'DYNO' in environ:
         ON_HEROKU = True
-        APP_NAME = str(getenv('APP_NAME', "filetolinkkk-6e5df82b1e88"))
+        APP_NAME = str(getenv('APP_NAME', "tmplinjkkk-8ab94b48362d"))
     
     else:
         ON_HEROKU = False
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-    HAS_SSL=bool(getenv('HAS_SSL',True))
+    HAS_SSL=bool(getenv('HAS_SSL',False))
     if HAS_SSL:
         URL = "https://{}/".format(FQDN)
     else:
