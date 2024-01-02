@@ -11,11 +11,11 @@ class Var(object):
     MULTI_CLIENT = False
     API_ID = int(getenv('API_ID', "28313782"))
     API_HASH = str(getenv('API_HASH', "52e8687988e1be742f5f73ea392e89bc"))
-    BOT_TOKEN = str(getenv('BOT_TOKEN', "6616860068:AAF924Q5JX2a9Qz4J5LndEPj0IppwL8ckpI"))
+    BOT_TOKEN = str(getenv('BOT_TOKEN', "6806754846:AAHG4lsQaOznxc54FRuu6-vAyGVAM8FM_Dc"))
     name = str(getenv('name', 'filetolinkbot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', "-1001991965904"))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', "-1001922425252"))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
@@ -25,7 +25,7 @@ class Var(object):
     OWNER_USERNAME = str(getenv('OWNER_USERNAME', "Dhanush1300"))
     if 'DYNO' in environ:
         ON_HEROKU = True
-        APP_NAME = str(getenv('APP_NAME', "fillllllllllll-f3cb2d7954fe"))
+        APP_NAME = str(getenv('APP_NAME', "filestreamm-10315a10d5bf"))
     
     else:
         ON_HEROKU = False
